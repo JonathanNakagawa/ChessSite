@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../CSS/Tile.css';
+import '../index.css';
 
 // The Tile component represents an individual tile of the chess board. 
 // It accepts a color. 
