@@ -1,8 +1,10 @@
 import Piece from './piece.js'
+import WhitePawn from '../images/Pawn_White.png'
+import BlackPawn from '../images/Pawn_Black.png'
 
 export default class Pawn extends Piece {
     constructor(player) {
-        super(player, (player === 1? "https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" : "https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt45.svg"));
+        super(player, (player === 1? WhitePawn : BlackPawn));
         this.inInitialPos = true;
     }
 
