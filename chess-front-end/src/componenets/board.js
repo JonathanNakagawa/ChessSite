@@ -15,7 +15,7 @@ export class Board extends React.Component {
 
     render(){
       const board = [];
-      for(let y = 0; y < 8; y++){
+      for(let y = 7; y >= 0; y--){
         for(let x = 0; x < 8; x++){
           const tileShade = ((isEven(x) && isEven(y)) || (!isEven(x) && !isEven(y)))? 'dark-square' : 'light-square';
           const tile = this.renderTile(x, y, tileShade)
